@@ -1,16 +1,11 @@
-document.querySelector('.year-now').innerHTML = ['©', (new Date()).getUTCFullYear(), document.title].join(" ");
-        document.querySelectorAll('.sc').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                if (this.classList.contains("list-element")) {
-                    this.querySelector("svg").classList.toggle('tapped');
-                }
-                let aHref = this.getAttribute('href').substring(1);
-                let element = document.getElementById(aHref);
-                element.classList.toggle('closed');
-                element.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            });
-        });
+document.querySelector(".year-now").innerHTML = ["\xa9", new Date().getUTCFullYear(), document.title].join(" "), document.querySelectorAll(".sc").forEach(a => {
+            a.addEventListener("click", function(b) {
+                b.preventDefault(), this.classList.contains("list-element") && this.querySelector("svg").classList.toggle("tapped");
+                let c = this.getAttribute("href").substring(1),
+                    a = document.getElementById(c);
+                a.classList.toggle("closed"), a.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                })
+            })
+        })

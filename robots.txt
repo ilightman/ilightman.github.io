@@ -1,4 +1,4 @@
 User-Agent: *
 Disallow: /
-# Disallow: /assets/images/edu-docs/
+# Disallow: /assets/noindex/
 Sitemap: https://https://ilightman.github.io/sitemap.xml
